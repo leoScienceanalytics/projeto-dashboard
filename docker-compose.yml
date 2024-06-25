@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    ports:
+      - "8050:8050"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python app.py
+  db:
+    image: python:3.11.9-slim
+    volumes:
+      - ./data:/data
+    command: tail -f /dev/null
