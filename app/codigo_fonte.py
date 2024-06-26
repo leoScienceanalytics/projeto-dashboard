@@ -38,7 +38,7 @@ url_theme2 = dbc.themes.DARKLY
 
 
 # ===== Reading n cleaning File ====== #
-df, df_cru = extract_transform_load('C:/Users/leona/Documents/projetoDASHBOARD/data/dataset.csv')
+df, df_cru = extract_transform_load(r'C:\Users\leona\Documents\projetoDASHBOARD\data\dataset.csv')
 
 # Criando opções pros filtros que virão
 options_month = [{'label': 'Ano todo', 'value': 0}]
